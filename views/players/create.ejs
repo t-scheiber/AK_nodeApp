@@ -1,0 +1,21 @@
+<html lang="en">
+  <%- include('../partials/head.ejs') %>
+
+  <body>
+    <%- include('../partials/nav.ejs') %>
+
+    <div class="create-player content">
+      <form action="/players" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required autofocus  placeholder="Player's Username" />
+        <label for="fullname">Player Fullname</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="Enter the Player's Full Name..." />
+        <label for="bio">A Player's Bio</label>
+        <textarea id="bio" name="bio" required placeholder="Enter a bio..."></textarea>
+        <button>Submit</button>
+      </form>
+    </div>
+    
+    <%- include('../partials/footer.ejs') %>
+  </body>
+</html>

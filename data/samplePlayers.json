@@ -1,0 +1,27 @@
+[
+  {
+    "_id": "local-1",
+    "username": "captain_jane",
+    "fullname": "Jane Doe",
+    "bio": "Veteran team captain who leads scoring across the league.",
+    "createdAt": "2024-01-05T10:00:00.000Z",
+    "updatedAt": "2024-01-05T10:00:00.000Z"
+  },
+  {
+    "_id": "local-2",
+    "username": "goalie_max",
+    "fullname": "Max Mustermann",
+    "bio": "Shot-stopping specialist with a knack for clutch saves.",
+    "createdAt": "2024-03-11T14:22:00.000Z",
+    "updatedAt": "2024-03-11T14:22:00.000Z"
+  },
+  {
+    "_id": "local-3",
+    "username": "swift_ayla",
+    "fullname": "Ayla Swift",
+    "bio": "Pace-focused winger who creates constant chances.",
+    "createdAt": "2024-05-20T08:45:00.000Z",
+    "updatedAt": "2024-05-20T08:45:00.000Z"
+  }
+]
+
