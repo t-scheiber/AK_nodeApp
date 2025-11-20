@@ -1,0 +1,21 @@
+<html lang="en">
+  <%- include('../partials/head.ejs') %>
+
+  <body>
+    <%- include('../partials/nav.ejs') %>
+
+    <div class="players content">
+      <h2>All Players</h2>
+      <% if(players.length > 0) { %> <% players.forEach(player => { %>
+      <a class="single" href="/players/<%= player._id %>">
+        <h3 class="title"><%= player.username %></h3>
+        <p class="fullname"><%= player.fullname %></p>
+      </a>
+      <% }) %> <% } else { %>
+      <p>There are no players to display.</p>
+      <% } %>
+    </div>
+
+    <%- include('../partials/footer.ejs') %>
+  </body>
+</html>
