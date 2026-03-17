@@ -22,3 +22,8 @@ Thumbs.db
 *.swo
 /node_modules
 data/localPlayers.json
+
+.claude/
+.cursor/
+.chatgpt/
+.gemini/
