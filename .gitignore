@@ -20,5 +20,6 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+.claude/
 /node_modules
 data/localPlayers.json
