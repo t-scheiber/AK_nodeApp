@@ -27,14 +27,14 @@ jobs:
       DATABASE_URL: postgresql://ci:ci@localhost:5432/ci
     steps:
       - name: Checkout Renovate branch
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 0
           token: ${{ secrets.RENOVATE_TOKEN }}
 
       - name: Checkout shared Renovate config
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: t-scheiber/renovate-config
           ref: main
