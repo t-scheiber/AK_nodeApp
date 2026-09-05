@@ -1,9 +1,9 @@
+require("dotenv").config();
 const express = require("express");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 const playerRoutes = require("./routes/playerRoutes");
 const playerStore = require("./services/playerStore");
-require("dotenv").config();
 
 //express app
 const app = express();
@@ -21,7 +21,7 @@ const startServer = () => {
 
 if (playerStore.isDbEnabled) {
   mongoose
-    .connect(dbURL, { useNewUrlParser: true, useUnifiedTopology: true })
+    .connect(dbURL)
     .then(startServer)
     .catch((err) => {
       console.error("Failed to connect to MongoDB:", err);
