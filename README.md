@@ -141,3 +141,10 @@ Remember to:
 ---
 
 **Built with Node.js** 🟢 | **Powered by MongoDB** 🍃 | **Styled with EJS** 📄
+
+
+## Maintenance validation
+
+Use `npm ci --ignore-scripts` to install the committed dependency graph, then `npm test` and `npm run validate`. The 12 regression tests exercise the actual Express routes, EJS rendering and output escaping, local player persistence across restart, deletion, Mongoose field validation, database startup option compatibility and dotenv loading order. They use temporary local data and synthetic configuration. They never connect to a real MongoDB database.
+
+The central maintenance controller runs installation and project code in separate network phases. Complete dependency, source, configuration and full-history secret scans plus AI review and enforced Rulesets remain required before activation and automatic merging.
